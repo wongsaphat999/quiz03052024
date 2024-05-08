@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+    <style>
+      body {background-color: #deffd6;}
+      hr {background-color:white;}
+      </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+      <h1>คำถาม</h1>
+        <h1></h1>
+        <p id="question1">1. PIM ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="checkAnswer('a')">ก) พีไอเอ็ม</button>
+        <button class="button" onclick="checkAnswer('b')">ข) ปิ๋ม</button>
+        <button class="button" onclick="checkAnswer('c')">ค) พิม</button>
+        <button class="button" onclick="checkAnswer('d')">ง) ภีม</button>
+        <p id="result1"></p>
+    </br></br>
+        <h1></h1>
+        <p id="question2">2. บริษัท ซีพี ออลล์ จํากัด (มหาชน) ก่อตั้งขึ้นเมื่อปี ?</p>
+        <button class="button" onclick="checkAnswer2('a')">ก) 2519</button>
+        <button class="button" onclick="checkAnswer2('b')">ข) 2527</button>
+        <button class="button" onclick="checkAnswer2('c')">ค) 2531</button>
+        <button class="button" onclick="checkAnswer2('d')">ง) 2540</button>        
+        <p id="result2"></p>
+    </br></br>
+    <hr>
+    <p id="question1"><b>ผลการตอบคำถาม</b></p>
+    <p id="sumresult">คำถามถูกต้องทั้งหมด 0 ข้อ</p>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
